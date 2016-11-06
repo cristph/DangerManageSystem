@@ -1,5 +1,5 @@
 # DangerManageSystem
-
+<h1>lib</h1>
 WEB-INF/lib/antlr-2.7.7.jar
 WEB-INF/lib/aopalliance-1.0.jar
 WEB-INF/lib/c3p0-0.9.1.2.jar
@@ -29,3 +29,27 @@ WEB-INF/lib/spring-orm-4.1.6.RELEASE.jar
 WEB-INF/lib/spring-tx-4.1.6.RELEASE.jar
 WEB-INF/lib/spring-web-4.1.6.RELEASE.jar
 WEB-INF/lib/spring-webmvc-4.1.6.RELEASE.jar
+
+
+<h1>sql</h1>
+CREATE TABLE `danger` (
+  `did` int(11) NOT NULL AUTO_INCREMENT,
+  `content` varchar(45) DEFAULT NULL,
+  `possiblity` varchar(45) DEFAULT NULL,
+  `effect` varchar(45) DEFAULT NULL,
+  `threshold` varchar(45) DEFAULT NULL,
+  `poster` varchar(45) DEFAULT NULL,
+  `tracer` varchar(45) DEFAULT NULL,
+  `conditiondescription` varchar(45) DEFAULT NULL,
+  `description` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`did`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `user` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `identity` varchar(45) DEFAULT NULL,
+  `pswd` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
